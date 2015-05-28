@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CrashlyticsFramework"
-  s.version      = "3.0.8.1"
+  s.version      = "3.0.8.2"
   s.summary      = "The most powerful, yet lightest weight crash reporting solution for iOS and Android developers. | Crashlytics"
   s.homepage     = "http://crashlytics.com"
   s.license      = { 
@@ -15,6 +15,6 @@ Pod::Spec.new do |s|
   s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)' }
   s.ios.vendored_frameworks = 'Crashlytics.framework', 'Fabric.framework'
   s.preserve_paths = '*.framework'
-  s.frameworks = 'Crashlytics', 'Fabric'
-  s.library = 'c++'
+  s.frameworks = 'Crashlytics', 'Fabric', 'Foundation', 'Security', 'CoreFoundation', 'CoreServices'
+  s.library = 'z', 'objc', 'System'
 end
