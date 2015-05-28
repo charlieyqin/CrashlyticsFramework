@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CrashlyticsFramework"
-  s.version      = "3.0.8"
+  s.version      = "3.0.8.1"
   s.summary      = "The most powerful, yet lightest weight crash reporting solution for iOS and Android developers. | Crashlytics"
   s.homepage     = "http://crashlytics.com"
   s.license      = { 
@@ -16,4 +16,5 @@ Pod::Spec.new do |s|
   s.ios.vendored_frameworks = 'Crashlytics.framework', 'Fabric.framework'
   s.preserve_paths = '*.framework'
   s.frameworks = 'Crashlytics', 'Fabric'
+  s.library = 'c++'
 end
