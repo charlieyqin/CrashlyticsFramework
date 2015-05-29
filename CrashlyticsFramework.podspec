@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CrashlyticsFramework"
-  s.version      = "3.0.8.3"
+  s.version      = "3.0.8.4"
   s.summary      = "The most powerful, yet lightest weight crash reporting solution for iOS and Android developers. | Crashlytics"
   s.homepage     = "http://crashlytics.com"
   s.license      = { 
